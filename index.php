@@ -40,6 +40,8 @@
 		<input type="text" name="desc">
 	</div>
 
+	<div class="input-group">
+		<button type="submit" name="save" class="btn">SAVE</button>
 
 </form>
 
