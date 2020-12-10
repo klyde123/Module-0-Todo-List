@@ -25,11 +25,23 @@
 			<td>
 				<a href=""> Delete </a>
 			</td>
-
 		</tr>
 	</tbody>
 </table>
 
+<form>
+	<div class="input-group">
+		<label>Title</label>
+		<input type="text" name="name">
+	</div>
+
+	<div class="input-group">
+		<label>Description</label>
+		<input type="text" name="desc">
+	</div>
+
+
+</form>
 
 </body>
 </html>
