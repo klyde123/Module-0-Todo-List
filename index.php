@@ -19,7 +19,13 @@
 		<tr>
 			<td>Module 0</td>
 			<td>Make a repositor at Github and make a simple project</td>
-			
+			<td>
+				<a href=""> Edit </a>
+			</td>
+			<td>
+				<a href=""> Delete </a>
+			</td>
+
 		</tr>
 	</tbody>
 </table>
