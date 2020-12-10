@@ -1,5 +1,9 @@
 <?php
 
+	//adding variables
+	$name = "";
+	$discription = "";
+
 	//connect to database
 	$db = mysqli_connect('localhost', 'root', '', 'crud');
 
