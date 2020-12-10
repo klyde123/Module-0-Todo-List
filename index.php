@@ -29,7 +29,7 @@
 	</tbody>
 </table>
 
-<form>
+<form method="post" action="">
 	<div class="input-group">
 		<label>Title</label>
 		<input type="text" name="name">
@@ -37,12 +37,12 @@
 
 	<div class="input-group">
 		<label>Description</label>
-		<input type="text" name="desc">
+		<input type="text" name="discription">
 	</div>
 
 	<div class="input-group">
 		<button type="submit" name="save" class="btn">SAVE</button>
-
+	</div>
 </form>
 
 </body>
