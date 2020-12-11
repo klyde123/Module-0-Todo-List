@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <!--This is my first commit for this simple crud -->
