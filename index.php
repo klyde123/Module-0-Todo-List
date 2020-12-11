@@ -10,6 +10,15 @@
 <!--This is my first commit for this simple crud -->
 <!--my 2nd attempt for commit and push-->
 
+<?php if (isset($_SESSION['message'])): ?>
+	<div class="msg">
+		<?php 
+			echo $_SESSION['message']; 
+			unset($_SESSION['message']);
+		?>
+	</div>
+<?php endif ?>
+
 <table>
 	<thead>
 		<tr>
