@@ -22,7 +22,7 @@
 	if (isset($_POST['update'])) {
 
 	$name = mysql_real_escape_string($_POST['name']);
-	$address = mysql_real_escape_string($_POST['name']);
+	$discription = mysql_real_escape_string($_POST['discription']);
 	$id = mysql_real_escape_string($_POST['id']);
 
 
