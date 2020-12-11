@@ -1,3 +1,5 @@
+<?php  include('server.php'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +23,7 @@
 			<td>Module 0</td>
 			<td>Make a repositor at Github and make a simple project</td>
 			<td>
-				<a href=""> Edit </a>
+				<a href=""> Update </a>
 			</td>
 			<td>
 				<a href=""> Delete </a>

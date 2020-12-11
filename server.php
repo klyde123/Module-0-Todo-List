@@ -26,4 +26,10 @@
 	$id = mysql_real_escape_string($_POST['id']);
 
 
+	mysqli_query($db, "UPDATE info SET name='$name', address='$address' WHERE id=$id");
+	$_SESSION['message'] = "Task Updated!"; 
+	header('location: index.php');
+	}
+
+
 ?>
