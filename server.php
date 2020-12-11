@@ -18,5 +18,12 @@
 		header('location: index.php'); //this is for redirecting the index page after inserting
 	}
 
+	//update records
+	if (isset($_POST['update'])) {
+
+	$name = mysql_real_escape_string($_POST['name']);
+	$address = mysql_real_escape_string($_POST['address']);
+	$id = mysql_real_escape_string($_POST['id']);
+
 
 ?>
