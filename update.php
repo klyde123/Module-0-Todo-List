@@ -1,3 +1,29 @@
+<?php 
+include "config.php";
+
+// if the form's update button is clicked, we need to process the form
+	if (isset($_POST['update'])) {
+		$firstname = $_POST['firstname'];
+		$user_id = $_POST['user_id'];
+		$lastname = $_POST['lastname'];
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$gender = $_POST['gender'];
+
+		// write the update query
+		$sql = "UPDATE `users` SET `firstname`='$firstname',`lastname`='$lastname',`email`='$email',`password`='$password',`gender`='$gender' WHERE `id`='$user_id'";
+
+		// execute the query
+		$result = $conn->query($sql);
+
+		if ($result == TRUE) {
+			echo "Record updated successfully.";
+		}else{
+			echo "Error:" . $sql . "<br>" . $conn->error;
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
