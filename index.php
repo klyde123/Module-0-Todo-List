@@ -6,13 +6,11 @@ include "config.php";
 		// get variables from the form
 		$first_name = $_POST['firstname'];
 		$last_name = $_POST['lastname'];
-		$email = $_POST['email'];
-		$password = $_POST['password'];
-		$gender = $_POST['gender'];
+		
 
 		//write sql query
 
-		$sql = "INSERT INTO `users`(`firstname`, `lastname`, `email`, `password`, `gender`) VALUES ('$first_name','$last_name','$email','$password','$gender')";
+		$sql = "INSERT INTO `users`(`firstname`, `lastname`) VALUES ('$first_name','$last_name')";
 
 		// execute the query
 
@@ -47,6 +45,71 @@ include "config.php";
     <input type="submit" name="submit" value="SUBMIT">
   </fieldset>
 </form>
+
+
+
+
+
+
+<?php 
+include "config.php";
+
+//write the query to get data from users table
+
+$sql = "SELECT * FROM users";
+
+//execute the query
+
+$result = $conn->query($sql);
+
+
+?>
+
+<br>
+<br>
+<div class="container">
+
+	<fieldset>
+    <legend></legend>
+		<h2>TASKS LIST</h2>
+<table class="table">
+	<thead>
+		<tr>
+		<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID</th>
+		<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Title</th>
+		<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description</th>
+
+	</tr>
+	</thead>
+	<tbody>	
+		<?php
+			if ($result->num_rows > 0) {
+				//output data of each row
+				while ($row = $result->fetch_assoc()) {
+		?>
+
+					<tr>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row['id']; ?></td> &nbsp;&nbsp;&nbsp;
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row['firstname']; ?></td>&nbsp;&nbsp;&nbsp;
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row['lastname']; ?></td>&nbsp;&nbsp;&nbsp;
+	
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-info" href="update.php?id=<?php echo $row['id']; ?>">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+					</tr>	
+					
+		<?php		}
+			}
+		?>
+	        	
+	</tbody>
+</table>
+
+</fieldset>
+	</div>
+
+
+
+
+
 
 </body>
 </html>
