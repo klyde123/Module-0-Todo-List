@@ -2,28 +2,18 @@
 <html>
 <body>
 
-<h2>Signup Form</h2>
+<h2>To Do Task</h2>
 
 <form action="" method="POST">
   <fieldset>
-    <legend>Personal information:</legend>
-    First name:<br>
+    <legend></legend>
+    Title:<br>
     <input type="text" name="firstname">
     <br>
-    Last name:<br>
+    Description:<br>
     <input type="text" name="lastname">
-    <br>
-    Email:<br>
-    <input type="email" name="email">
-    <br>
-    Password:<br>
-    <input type="password" name="password">
-    <br>
-    Gender:<br>
-    <input type="radio" name="gender" value="Male">Male
-    <input type="radio" name="gender" value="Female">Female
     <br><br>
-    <input type="submit" name="submit" value="submit">
+    <input type="submit" name="submit" value="SUBMIT">
   </fieldset>
 </form>
 
