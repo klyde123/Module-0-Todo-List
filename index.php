@@ -10,6 +10,23 @@ include "config.php";
 		$password = $_POST['password'];
 		$gender = $_POST['gender'];
 
+		//write sql query
+
+		$sql = "INSERT INTO `users`(`firstname`, `lastname`, `email`, `password`, `gender`) VALUES ('$first_name','$last_name','$email','$password','$gender')";
+
+		// execute the query
+
+		$result = $conn->query($sql);
+
+		if ($result == TRUE) {
+			echo "New record created successfully.";
+		}else{
+			echo "Error:". $sql . "<br>". $conn->error;
+		}
+
+		$conn->close();
+
+	}
 ?>
 
 <!DOCTYPE html>
