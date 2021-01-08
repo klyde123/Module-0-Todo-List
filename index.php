@@ -1,3 +1,17 @@
+<?php 
+include "config.php";
+
+// if the form's submit button is clicked, we need to process the form
+	if (isset($_POST['submit'])) {
+		// get variables from the form
+		$first_name = $_POST['firstname'];
+		$last_name = $_POST['lastname'];
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$gender = $_POST['gender'];
+
+?>
+
 <!DOCTYPE html>
 <html>
 <body>
