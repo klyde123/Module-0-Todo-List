@@ -20,3 +20,19 @@ if (isset($_GET['id'])) {
 }
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<center>
+		<button onclick="window.location.href='index.php'">REFRESH</button>
+		</center>
+
+
+</body>
+</html>
