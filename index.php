@@ -29,6 +29,38 @@ include "config.php";
 
 <!DOCTYPE html>
 <html>
+<style>
+	body {
+    font-size: 19px;
+}
+table{
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+tr:hover {
+    background: #F5F5F5;
+}
+
+form {
+    width: 45%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px; 
+    border: 1px solid #bbbbbb; 
+    border-radius: 5px;
+}
+
+</style>
 <body>
 
 <h2>To Do Task</h2>
@@ -80,6 +112,7 @@ $result = $conn->query($sql);
 		<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID</th>
 		<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Title</th>
 		<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description</th>
+		<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Option</th>
 
 	</tr>
 	</thead>
