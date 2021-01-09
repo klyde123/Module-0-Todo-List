@@ -46,8 +46,10 @@ include "config.php";
   </fieldset>
 </form>
 
-
-
+<br><br>
+<center><center>
+		<button onclick="window.location.href='index.php'">REFRESH</button>
+		</center></center>
 
 
 
