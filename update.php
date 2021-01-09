@@ -41,10 +41,10 @@ if (isset($_GET['id'])) {
 		}
 
 	?>
-		<h2>User Update Form</h2>
+		<h2>UPDATE TASK</h2>
 		<form action="" method="post">
 		  <fieldset>
-		    <legend>Personal information:</legend>
+		    <legend></legend>
 		    Title:<br>
 		    <input type="text" name="firstname" value="<?php echo $first_name; ?>">
 		    <input type="hidden" name="user_id" value="<?php echo $id; ?>">
@@ -55,6 +55,10 @@ if (isset($_GET['id'])) {
 		    <input type="submit" value="Update" name="update">
 		  </fieldset>
 		</form>
+
+<center>
+		<button onclick="window.location.href='index.php'">CONTINUE</button>
+		</center>
 
 		</body>
 		</html>
