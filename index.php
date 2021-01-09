@@ -74,7 +74,7 @@ form {
 }
 
 .button1 {
-  background-color: white;
+  background-color: #4CAF50;
   color: black;
   border: 2px solid #4CAF50;
 }
@@ -85,7 +85,7 @@ form {
 }
 
 .button2 {
-  background-color: white;
+  background-color: #008CBA;
   color: black;
   border: 2px solid #008CBA;
 }
@@ -109,7 +109,7 @@ form {
     Description:<br>
     <input type="text" name="lastname">
     <br><br>
-    <input type="submit" name="submit" value="SUBMIT">
+    <input class="button button2" type="submit" name="submit" value="SUBMIT">
   </fieldset>
 </form>
 
