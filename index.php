@@ -95,6 +95,10 @@ form {
   color: white;
 }
 
+body {
+  background-color: lightblue;
+}
+
 </style>
 <body>
 
